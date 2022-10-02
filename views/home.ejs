@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <div class="whole_screen"></div>
+    <div class="left"></div>
+    <div class="middle">
+        <div id="stoclin" class="stoclin"
+            style="transform:translateX(-457px)translateY(-300px) scale(0.5) rotate(0.25turn);">
+            <div class="stoclin_back"></div>
+            <div class="stoclin_screen"></div>
+            <div class="stoclin_left_fork"></div>
+            <div class="stoclin_right_fork"></div>
+        </div>
+    </div>
+    <div id="00-Charger" class="charger" style="transform:translateX(0px)translateY(0px) scale(0.5) rotate(.5turn);">
+        <div class="chargerContacts"></div>
+        <div class="chargerBody"></div>
+        <div class="chargerScreen"></div>
+    </div>
+    <div id="cart" class="cart" style="transform:translateX(-390px)translateY(-420px) scale(0.5);"></div>
+    <!--Top pick up points-->
+    <div id="0-PickUp1" class="pickZone" style="transform:translateX(-179px)translateY(-410px) scale(0.5);">0-PickUp1
+    </div>
+    <div id="0-PickUp2" class="pickZone" style="transform:translateX(29px)translateY(-410px) scale(0.5);">0-PickUp2
+    </div>
+    <div id="0-PickUp3" class="pickZone" style="transform:translateX(220px)translateY(-410px) scale(0.5);">0-PickUp3
+    </div>
+    <!--Bottom left dropping points-->
+    <div id="0-Drop1" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(-400px)translateY(150px) scale(0.5) ;">0-Drop1</div>
+    <div id="0-Drop2" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(-400px)translateY(200px) scale(0.5);">0-Drop2</div>
+    <div id="0-Drop3" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(-400px)translateY(250px) scale(0.5);">0-Drop3</div>
+    <div id="0-Drop4" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(-400px)translateY(300px) scale(0.5);">0-Drop4</div>
+    <div id="0-Drop5" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(-400px)translateY(350px) scale(0.5);">0-Drop5</div>
+    <div id="0-Drop6" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(-400px)translateY(400px) scale(0.5);">0-Drop6</div>
+    <!--Bottom right dropping points-->
+    <div id="0-Cargo1" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(1px)translateY(200px) scale(0.5);">0-Cargo1</div>
+    <div id="0-Cargo2" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(1px)translateY(300px) scale(0.5);">0-Cargo2</div>
+    <div id="0-Cargo3" class="dropZone" onClick="reply_click(this.id)"
+        style="transform:translateX(1px)translateY(400px) scale(0.5);">0-Cargo3</div>
+
+
+    </div>
+    <div class="right">
+        <div class="create_mission">
+            <h3>新規のミッション</h3>
+            <h4 id="kara">から</h4>
+            <h4 id="made">まで</h4>
+            <button class="create_mission_button" onclick="create_mission()" type="button">保存</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </div>
+</body>
