@@ -142,8 +142,8 @@ body {
 
 .pickZone {
     position: absolute;
-    width: 80px;
-    height: 45px;
+    width: 95px;
+    height: 65px;
     left: 50%;
     top: 50%;
     background-color: #d4dce4;
@@ -151,8 +151,8 @@ body {
 
 .dropZone {
     position: absolute;
-    width: 45px;
-    height: 80px;
+    width: 65px;
+    height: 95px;
     left: 50%;
     top: 50%;
     background-color: #d4dce4;
@@ -160,11 +160,11 @@ body {
 
 .cart {
     position: absolute;
-    width: 80px;
-    height: 45px;
+    width: 95px;
+    height: 65px;
     left: 50%;
     top: 50%;
-    background-color: #dda800;
+    background-color: #2ca15e;
     z-index: 1;
 }
 
@@ -198,4 +198,22 @@ body {
     position: absolute;
     top: 90px;
     left: 10px;
+}
+
+.mission_status {
+    position: absolute;
+    top: 36%;
+    left: 1%;
+    height: 14%;
+    width: 98%;
+    background-color: rgb(243, 166, 189);
+}
+
+.insert_status {
+    position: absolute;
+    top: 62%;
+    left: 1%;
+    height: 14%;
+    width: 98%;
+    background-color: rgb(243, 166, 189);
 }
