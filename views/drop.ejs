@@ -22,15 +22,15 @@ tablet 1280x689
         </div>
         <div id="cart" class="cart" style="transform:translateX(-510px)translateY(-300px) scale(0.5);"></div>
         <!-- Charger-->
-        <div id="0-A-Charger-HP" class="charger" style="transform: rotate(0.25turn);">
+        <div id="0-A-Charger-HP" class="charger">
             <div class="chargerContacts"></div>
             <div class="chargerBody"></div>
             <div class="chargerScreen"></div>
         </div>
         <!--Top pick up points-->
-        <div id="0-PickUp1" class="pickZone" onClick="reply_click(this.id)">0-PickUp1</div>
-        <div id="0-PickUp2" class="pickZone" onClick="reply_click(this.id)">0-PickUp2</div>
-        <div id="0-PickUp3" class="pickZone" onClick="reply_click(this.id)">0-PickUp3</div>
+        <div id="0-PickUp1" class="pickZone">0-PickUp1</div>
+        <div id="0-PickUp2" class="pickZone">0-PickUp2</div>
+        <div id="0-PickUp3" class="pickZone">0-PickUp3</div>
         <!--Bottom left dropping points-->
         <div id="0-Drop1" class="dropZone" onClick="reply_click(this.id)">0-Drop1</div>
         <div id="0-Drop2" class="dropZone" onClick="reply_click(this.id)">0-Drop2</div>
@@ -50,13 +50,10 @@ tablet 1280x689
             <h3>新規のミッション</h3>
             <h4 id="kara">から</h4>
             <h4 id="made">まで</h4>
-            <button class="create_mission_button" onclick="tomaru.create_mission()" type="button">保存</button>
+            <button class="create_mission_button" onclick="create_mission()" type="button">保存</button>
         </div>
         <div class="mission_status"></div>
         <div class="insert_status">
-            <button id="insert_button" class="insert_vehicle" onclick="tomaru.insert_agv()" type="button">挿入する</button>
-            <button id="extract_button" class="extract_vehicle" onclick="tomaru.extract_avg()"
-                type="button">抜き取る</button>
         </div>
 
     </div>
