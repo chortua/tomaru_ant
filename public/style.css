@@ -114,7 +114,7 @@ body {
 .chargerContacts {
     position: absolute;
     left: 25px;
-    bottom: 0px;
+    top: 0px;
     width: 40px;
     height: 6px;
     background-color: rgb(4, 4, 109);
@@ -129,14 +129,14 @@ body {
     width: 90px;
     height: 50px;
     background-color: #dda800;
-    border-radius: 34% 0% 25% 25% / 0% 0% 25% 25%;
+    border-radius: 40% 40% 0% 0% / 25% 25% 0% 0%;
 }
 
 
 .chargerScreen {
     position: absolute;
     left: 15px;
-    top: 0px;
+    bottom: 0px;
     width: 60px;
     height: 40px;
     background-color: rgb(4, 4, 109);
@@ -204,7 +204,7 @@ body {
 
 .mission_status {
     position: absolute;
-    top: 36%;
+    top: 26%;
     left: 1%;
     height: 14%;
     width: 98%;

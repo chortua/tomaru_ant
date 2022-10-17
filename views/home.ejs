@@ -13,14 +13,13 @@ tablet 1280x689
     <div class="whole_screen"></div>
     <div class="left"></div>
     <div class="middle">
-        <div id="stoclin" class="stoclin"
-            style="transform:translateX(-570px)translateY(-200px) scale(0.5) rotate(0.25turn);">
+        <div id="stoclin" class="stoclin">
             <div class="stoclin_back"></div>
             <div class="stoclin_screen"></div>
             <div class="stoclin_left_fork"></div>
             <div class="stoclin_right_fork"></div>
         </div>
-        <div id="cart" class="cart" style="transform:translateX(-510px)translateY(-300px) scale(0.5);"></div>
+
         <!-- Charger-->
         <div id="0-A-Charger-HP" class="charger" style="transform: rotate(0.25turn);">
             <div class="chargerContacts"></div>
@@ -30,7 +29,10 @@ tablet 1280x689
         <!--Top pick up points-->
         <div id="0-PickUp1" class="pickZone" onClick="reply_click(this.id)">0-PickUp1</div>
         <div id="0-PickUp2" class="pickZone" onClick="reply_click(this.id)">0-PickUp2</div>
-        <div id="0-PickUp3" class="pickZone" onClick="reply_click(this.id)">0-PickUp3</div>
+        <div id="0-PickUp3" class="dropZone" onClick="reply_click(this.id)">0-PickUp3</div>
+        <div id="0-CargoDrop-1" class="pickZone" onClick="reply_click(this.id)">0-CargoDrop-1</div>
+        <div id="0-CargoDrop-2" class="pickZone" onClick="reply_click(this.id)">0-CargoDrop-2</div>
+        <div id="0-CargoDrop-3" class="pickZone" onClick="reply_click(this.id)">0-CargoDrop-3</div>
         <!--Bottom left dropping points-->
         <div id="0-Drop1" class="dropZone" onClick="reply_click(this.id)">0-Drop1</div>
         <div id="0-Drop2" class="dropZone" onClick="reply_click(this.id)">0-Drop2</div>
@@ -38,10 +40,15 @@ tablet 1280x689
         <div id="0-Drop4" class="dropZone" onClick="reply_click(this.id)">0-Drop4</div>
         <div id="0-Drop5" class="dropZone" onClick="reply_click(this.id)">0-Drop5</div>
         <div id="0-Drop6" class="dropZone" onClick="reply_click(this.id)">0-Drop6</div>
+        <div id="0-Drop7" class="dropZone" onClick="reply_click(this.id)">0-Drop7</div>
+        <div id="0-Drop8" class="dropZone" onClick="reply_click(this.id)">0-Drop8</div>
+        <div id="0-Drop9" class="dropZone" onClick="reply_click(this.id)">0-Drop9</div>
+        <div id="0-Drop_10" class="dropZone" onClick="reply_click(this.id)">0-Drop_10</div>
+
         <!--Bottom right dropping points-->
-        <div id="0-Cargo1" class="dropZone" onClick="reply_click(this.id)">0-Cargo1</div>
-        <div id="0-Cargo2" class="dropZone" onClick="reply_click(this.id)">0-Cargo2</div>
-        <div id="0-Cargo3" class="dropZone" onClick="reply_click(this.id)">0-Cargo3</div>
+        <div id="0-CargoP-1" class="dropZone" onClick="reply_click(this.id)">0-CargoP-1</div>
+        <div id="0-CargoP-2" class="dropZone" onClick="reply_click(this.id)">0-CargoP-2</div>
+        <div id="0-CargoP-3" class="dropZone" onClick="reply_click(this.id)">0-CargoP-3</div>
 
 
     </div>
@@ -52,7 +59,7 @@ tablet 1280x689
             <h4 id="made">まで</h4>
             <button class="create_mission_button" onclick="tomaru.create_mission()" type="button">保存</button>
         </div>
-        <div class="mission_status"></div>
+        <div id="mission_status" class="mission_status"></div>
         <div class="insert_status">
             <button id="insert_button" class="insert_vehicle" onclick="tomaru.insert_agv()" type="button">挿入する</button>
             <button id="extract_button" class="extract_vehicle" onclick="tomaru.extract_avg()"
